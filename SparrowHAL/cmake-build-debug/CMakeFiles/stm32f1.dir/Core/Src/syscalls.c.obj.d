@@ -1,5 +1,5 @@
 CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj: \
- C:\Users\el\CLionProjects\stm32f1\Core\Src\syscalls.c \
+ C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\syscalls.c \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\sys\stat.h \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\_ansi.h \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\newlib.h \

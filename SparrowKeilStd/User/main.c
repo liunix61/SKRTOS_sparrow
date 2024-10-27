@@ -17,8 +17,6 @@ void led_init(void)
 }
 
 
-
-
 #include<stdint.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -28,8 +26,8 @@ void led_init(void)
 #define configSysTickClockHz			( ( unsigned long ) 72000000 )
 #define configTickRateHz			( ( uint32_t ) 1000 )
 #define configShieldInterPriority 	191
-#define config_heap   4*1024
-#define configMaxPriority  4
+#define config_heap   8*1024
+#define configMaxPriority  32
 
 
 #define Class(class)    \
@@ -208,54 +206,53 @@ typedef void (* TaskFunction_t)( void * );
 
 __asm void vPortSVCHandler( void )
 {
-	PRESERVE8
+	  PRESERVE8
 
-	ldr	r3, =pxCurrentTCB	/* Restore the context. */
-	ldr r1, [r3]			/* Use pxCurrentTCBConst to get the pxCurrentTCB address. */
-	ldr r0, [r1]			/* The first item in pxCurrentTCB is the task top of stack. */
-	ldmia r0!, {r4-r11}		/* Pop the registers that are not automatically saved on exception entry and the critical nesting count. */
-	msr psp, r0				/* Restore the task stack pointer. */
-	isb
-	mov r0, #0
-	msr	basepri, r0
-	orr r14, #0xd
-	bx r14
+	  ldr	r3, =pxCurrentTCB	/* Restore the context. */
+	  ldr r1, [r3]			/* Use pxCurrentTCBConst to get the pxCurrentTCB address. */
+	  ldr r0, [r1]			/* The first item in pxCurrentTCB is the task top of stack. */
+	  ldmia r0!, {r4-r11}		/* Pop the registers that are not automatically saved on exception entry and the critical nesting count. */
+	  msr psp, r0				/* Restore the task stack pointer. */
+	  isb
+	  mov r0, #0
+	  msr	basepri, r0
+	  orr r14, #0xd
+	  bx r14
 }
 
 __asm void xPortPendSVHandler( void )
 {
-	extern uxCriticalNesting;
-	extern pxCurrentTCB;
-	extern vTaskSwitchContext;
+	  extern pxCurrentTCB;
+	  extern vTaskSwitchContext;
 
-	PRESERVE8
+	  PRESERVE8
 
-	mrs r0, psp
-	isb
+	  mrs r0, psp
+	  isb
 
-	ldr	r3, =pxCurrentTCB		/* Get the location of the current TCB. */
-	ldr	r2, [r3]
+	  ldr	r3, =pxCurrentTCB		/* Get the location of the current TCB. */
+	  ldr	r2, [r3]
 
-	stmdb r0!, {r4-r11}			/* Save the remaining registers. */
-	str r0, [r2]				/* Save the new top of stack into the first member of the TCB. */
+	  stmdb r0!, {r4-r11}			/* Save the remaining registers. */
+	  str r0, [r2]				/* Save the new top of stack into the first member of the TCB. */
 
-	stmdb sp!, {r3, r14}
-	mov r0, configShieldInterPriority
-	msr basepri, r0
-	dsb
-	isb
-	bl vTaskSwitchContext
-	mov r0, #0
-	msr basepri, r0
-	ldmia sp!, {r3, r14}
+	  stmdb sp!, {r3, r14}
+	  mov r0, configShieldInterPriority
+	  msr basepri, r0
+	  dsb
+	  isb
+	  bl vTaskSwitchContext
+	  mov r0, #0
+	  msr basepri, r0
+	  ldmia sp!, {r3, r14}
 
-	ldr r1, [r3]
-	ldr r0, [r1]				/* The first item in pxCurrentTCB is the task top of stack. */
-	ldmia r0!, {r4-r11}			/* Pop the registers and the critical nesting count. */
-	msr psp, r0
-	isb
-	bx r14
-	nop
+  	ldr r1, [r3]
+	  ldr r0, [r1]				/* The first item in pxCurrentTCB is the task top of stack. */
+	  ldmia r0!, {r4-r11}			/* Pop the registers and the critical nesting count. */
+	  msr psp, r0
+	  isb
+	  bx r14
+	  nop
 }
 
 #define switchTask()\
@@ -287,11 +284,6 @@ uint32_t SuspendBitTable = 0;
 
 //the table is defined for signal mechanism
 uint32_t BlockedBitTable = 0;
-
-void SetTaskPriority( TCB_t *self )
-{
-    TcbTaskTable[self->uxPriority] = self;
-}
 
 /*The RTOS delay will switch the task.It is used to liberate low-priority task*/
 void TaskDelay( uint16_t ticks )
@@ -332,24 +324,29 @@ void CheckTicks( void )
 }
 
 
-__attribute__((always_inline)) uint32_t xEnterCritical( void )
+
+__attribute__((always_inline)) inline uint32_t  xEnterCritical( void )
 {
     uint32_t xReturn;
-		uint32_t BarrierPriority = configShieldInterPriority;
+    uint32_t temp;
 
     __asm volatile(
             " cpsid i               \n"
-            " mrs xReturn, basepri       \n"
-            " msr basepri, BarrierPriority       \n"
+            " mrs %0, basepri       \n"
+            " mov %1, %2			\n"
+            " msr basepri, %1       \n"
             " dsb                   \n"
             " isb                   \n"
             " cpsie i               \n"
+            : "=r" (xReturn), "=r"(temp)
+            : "r" (configShieldInterPriority)
+            : "memory"
             );
 
     return xReturn;
 }
 
-__attribute__((always_inline)) void xEixtCritical( uint32_t xReturn )
+__attribute__((always_inline)) inline void xExitCritical( uint32_t xReturn )
 {
     __asm volatile(
             " cpsid i               \n"
@@ -365,7 +362,7 @@ void SysTick_Handler(void)
 {
     uint32_t xre = xEnterCritical();
     CheckTicks();
-    xEixtCritical(xre);
+    xExitCritical(xre);
 }
 
 uint32_t * pxPortInitialiseStack( uint32_t * pxTopOfStack,
@@ -452,27 +449,25 @@ void SchedulerInit( void )
 
 __asm void prvStartFirstTask( void )
 {
-	PRESERVE8
-
+	  PRESERVE8
 	/* Use the NVIC offset register to locate the stack. */
-	ldr r0, =0xE000ED08
-	ldr r0, [r0]
-	ldr r0, [r0]
-
+	  ldr r0, =0xE000ED08
+	  ldr r0, [r0]
+  	ldr r0, [r0]
 	/* Set the msp back to the start of the stack. */
-	msr msp, r0
+  	msr msp, r0
 	/* Globally enable interrupts. */
-	cpsie i
-	cpsie f
-	dsb
-	isb
+	  cpsie i
+	  cpsie f
+	  dsb
+	  isb
 	/* Call SVC to start the first task. */
-	svc 0
-	nop
-	nop
+	  svc 0
+	  nop
+	  nop
 }
 
-void __attribute__( ( always_inline ) ) SchedulerStart( void )
+__attribute__( ( always_inline ) ) inline void SchedulerStart( void )
 {
     /* Start the timer that generates the tick ISR.  Interrupts are disabled
      * here already. */
@@ -490,8 +485,9 @@ void __attribute__( ( always_inline ) ) SchedulerStart( void )
     prvStartFirstTask();
 }
 
-
 //Task Area!The user must create task handle manually because of debugging and specification
+
+
 TaskHandle_t tcbTask1 = NULL;
 TaskHandle_t tcbTask2 = NULL;
 

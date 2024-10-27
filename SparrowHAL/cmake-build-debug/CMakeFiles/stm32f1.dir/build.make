@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.5\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\el\CLionProjects\stm32f1
+CMAKE_SOURCE_DIR = C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\el\CLionProjects\stm32f1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stm32f1.dir/depend.make
@@ -69,297 +69,297 @@ include CMakeFiles/stm32f1.dir/progress.make
 include CMakeFiles/stm32f1.dir/flags.make
 
 CMakeFiles/stm32f1.dir/Core/Src/main.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/main.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/main.c
+CMakeFiles/stm32f1.dir/Core/Src/main.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/main.c
 CMakeFiles/stm32f1.dir/Core/Src/main.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/stm32f1.dir/Core/Src/main.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/main.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\main.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\main.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/stm32f1.dir/Core/Src/main.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/main.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\main.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\main.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\main.c
 
 CMakeFiles/stm32f1.dir/Core/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/main.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\main.c > CMakeFiles\stm32f1.dir\Core\Src\main.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\main.c > CMakeFiles\stm32f1.dir\Core\Src\main.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/main.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\main.c -o CMakeFiles\stm32f1.dir\Core\Src\main.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\main.c -o CMakeFiles\stm32f1.dir\Core\Src\main.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/stm32f1xx_it.c
+CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/stm32f1xx_it.c
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_it.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_it.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_it.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_it.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_it.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_it.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/stm32f1xx_hal_msp.c
+CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_msp.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/stm32f1xx_hal_timebase_tim.c
+CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/stm32f1xx_hal_timebase_tim.c
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_timebase_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_timebase_tim.c
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_timebase_tim.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_timebase_tim.c > CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\stm32f1xx_hal_timebase_tim.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\stm32f1xx_hal_timebase_tim.c -o CMakeFiles\stm32f1.dir\Core\Src\stm32f1xx_hal_timebase_tim.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C:/Users/el/CLionProjects/stm32f1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
 
 CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\stm32f1.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/system_stm32f1xx.c
+CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/system_stm32f1xx.c
 CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\system_stm32f1xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\system_stm32f1xx.c > CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\system_stm32f1xx.c > CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/system_stm32f1xx.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\system_stm32f1xx.c -o CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\system_stm32f1xx.c -o CMakeFiles\stm32f1.dir\Core\Src\system_stm32f1xx.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/sysmem.c
+CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/sysmem.c
 CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\sysmem.c
 
 CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\sysmem.c > CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\sysmem.c > CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\sysmem.c -o CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\sysmem.c -o CMakeFiles\stm32f1.dir\Core\Src\sysmem.c.s
 
 CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj: C:/Users/el/CLionProjects/stm32f1/Core/Src/syscalls.c
+CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/Core/Src/syscalls.c
 CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj: CMakeFiles/stm32f1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.obj -c C:\Users\el\CLionProjects\stm32f1\Core\Src\syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\syscalls.c
 
 CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\Core\Src\syscalls.c > CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\syscalls.c > CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.i
 
 CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\Core\Src\syscalls.c -o CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\syscalls.c -o CMakeFiles\stm32f1.dir\Core\Src\syscalls.c.s
 
 CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj: CMakeFiles/stm32f1.dir/flags.make
-CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj: C:/Users/el/CLionProjects/stm32f1/startup_stm32f103xb.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.obj -c C:\Users\el\CLionProjects\stm32f1\startup_stm32f103xb.s
+CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/startup_stm32f103xb.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj"
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.obj -c C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\startup_stm32f103xb.s
 
 CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.i"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E C:\Users\el\CLionProjects\stm32f1\startup_stm32f103xb.s > CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.i
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\startup_stm32f103xb.s > CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.i
 
 CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.s"
-	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:\Users\el\CLionProjects\stm32f1\startup_stm32f103xb.s -o CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.s
+	D:\all\devemcu\gcc_arm\gccarm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\startup_stm32f103xb.s -o CMakeFiles\stm32f1.dir\startup_stm32f103xb.s.s
 
 # Object files for target stm32f1
 stm32f1_OBJECTS = \
@@ -411,7 +411,7 @@ stm32f1.elf: CMakeFiles/stm32f1.dir/Core/Src/syscalls.c.obj
 stm32f1.elf: CMakeFiles/stm32f1.dir/startup_stm32f103xb.s.obj
 stm32f1.elf: CMakeFiles/stm32f1.dir/build.make
 stm32f1.elf: CMakeFiles/stm32f1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable stm32f1.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable stm32f1.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\stm32f1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -423,6 +423,6 @@ CMakeFiles/stm32f1.dir/clean:
 .PHONY : CMakeFiles/stm32f1.dir/clean
 
 CMakeFiles/stm32f1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\el\CLionProjects\stm32f1 C:\Users\el\CLionProjects\stm32f1 C:\Users\el\CLionProjects\stm32f1\cmake-build-debug C:\Users\el\CLionProjects\stm32f1\cmake-build-debug C:\Users\el\CLionProjects\stm32f1\cmake-build-debug\CMakeFiles\stm32f1.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\cmake-build-debug\CMakeFiles\stm32f1.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/stm32f1.dir/depend
 

@@ -17,9 +17,8 @@ void led_init(void)
 
 
 
-
+#include "core_cm3.h"
 #include<stdint.h>
-#include<stdio.h>
 #include<stdlib.h>
 
 
@@ -95,11 +94,11 @@ void *heap_malloc(size_t wantsize)
     {
         aligmentrequisize = aligment_byte - (wantsize & aligment_byte);
         wantsize += aligmentrequisize;
-    }//I will add the TaskSuspend function ,that make here be a atomic operation
+    }//You can add the TaskSuspend function ,that make here be a atomic operation
     if(theheap.tail== NULL )
     {
         heap_init();
-    }//
+    }//Resume
     prevnode = &theheap.head;
     usenode = theheap.head.next;
     while((usenode->blocksize) < wantsize )
@@ -290,10 +289,6 @@ uint32_t SuspendBitTable = 0;
 //the table is defined for signal mechanism
 uint32_t BlockedBitTable = 0;
 
-void SetTaskPriority( TCB_t *self )
-{
-    TcbTaskTable[self->uxPriority] = self;
-}
 
 /*The RTOS delay will switch the task.It is used to liberate low-priority task*/
 void TaskDelay( uint16_t ticks )
@@ -321,9 +316,12 @@ void CheckTicks( void )
     if( TicksBase == 0){
         TicksTableSwitch( );
     }
-    for(int i=0 ; i < configMaxPriori;i++) {
-        if(  WakeTicksTable[i]  > 0) {
-            if ( TicksBase >= WakeTicksTable[i] ) {
+    for(int i=0 ; i < configMaxPriori;i++)
+    {
+        if(  WakeTicksTable[i]  > 0)
+        {
+            if ( TicksBase >= WakeTicksTable[i] )
+            {
                 WakeTicksTable[i] = 0;
                 DelayBitTable &= ~(1 << i );//it is retained for the sake of normativity.
                 ReadyBitTable |= (1 << i);
@@ -334,18 +332,20 @@ void CheckTicks( void )
 }
 
 
-__attribute__((always_inline)) uint32_t xEnterCritical( void )
+__attribute__((always_inline)) inline uint32_t  xEnterCritical( void )
 {
     uint32_t xReturn;
+    uint32_t temp;
 
     __asm volatile(
             " cpsid i               \n"
             " mrs %0, basepri       \n"
+            " mov %1, %2			\n"
             " msr basepri, %1       \n"
             " dsb                   \n"
             " isb                   \n"
             " cpsie i               \n"
-            : "=r" (xReturn)
+            : "=r" (xReturn), "=r"(temp)
             : "r" (configShieldInterPriority)
             : "memory"
             );
@@ -353,7 +353,7 @@ __attribute__((always_inline)) uint32_t xEnterCritical( void )
     return xReturn;
 }
 
-__attribute__((always_inline)) void xEixtCritical( uint32_t xReturn )
+__attribute__((always_inline)) inline void xExitCritical( uint32_t xReturn )
 {
     __asm volatile(
             " cpsid i               \n"
@@ -371,7 +371,7 @@ void SysTick_Handler(void)
 {
     uint32_t xre = xEnterCritical();
     CheckTicks();
-    xEixtCritical(xre);
+    xExitCritical(xre);
 }
 
 uint32_t * pxPortInitialiseStack( uint32_t * pxTopOfStack,
@@ -454,13 +454,13 @@ void SchedulerInit( void )
     xTaskCreate(    leisureTask,
                     128,
                     NULL,
-                    1,
+                    0,
                     &leisureTcb
     );
 }
 
 
-void __attribute__( ( always_inline ) ) SchedulerStart( void )
+__attribute__( ( always_inline ) ) inline void SchedulerStart( void )
 {
     /* Start the timer that generates the tick ISR.  Interrupts are disabled
      * here already. */

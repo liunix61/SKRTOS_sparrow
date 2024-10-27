@@ -1132,13 +1132,31 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake"
+		},
+		{
+			"path" : "cmake/stm32cubemx/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS/cmake-build-debug",
-		"source" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS"
+		"build" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug",
+		"source" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL"
 	},
 	"version" : 
 	{

@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS/cmake-build-debug"
+			"value" : "c:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS/cmake-build-debug"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/cmake-build-debug"
 		},
 		{
 			"name" : "xSkRTOS_IS_TOP_LEVEL",
@@ -1451,7 +1451,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/xSkRTOS"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib"
 		}
 	],
 	"kind" : "cache",

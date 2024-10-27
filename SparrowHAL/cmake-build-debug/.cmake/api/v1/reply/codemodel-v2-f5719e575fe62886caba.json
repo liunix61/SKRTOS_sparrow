@@ -66,7 +66,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "stm32f1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-stm32f1-Debug-cbcc8bf45e8b670c820c.json",
+					"jsonFile" : "target-stm32f1-Debug-e96f77961922c9cac6bb.json",
 					"name" : "stm32f1",
 					"projectIndex" : 0
 				}
@@ -76,8 +76,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/el/CLionProjects/stm32f1/cmake-build-debug",
-		"source" : "C:/Users/el/CLionProjects/stm32f1"
+		"build" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug",
+		"source" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL"
 	},
 	"version" : 
 	{
