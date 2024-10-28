@@ -59,7 +59,7 @@ void SystemClock_Config(void);
 #define configTickRateHz			( ( uint32_t ) 1000 )
 #define configShieldInterPriority 	191
 #define config_heap   8*1024
-#define configMaxPriori  4
+#define configMaxPriori  32
 
 
 #define Class(class)    \
@@ -446,14 +446,14 @@ void xTaskCreate( TaskFunction_t pxTaskCode,
 __attribute__( ( always_inline ) ) static inline uint8_t FindHighestPriority( void )
 {
     uint8_t TopZeroNumber;
+    uint8_t temp;
     __asm volatile
             (
-            "clz %0, %1\n"
-            "mov r3, #31\n"
-            "sub %0, r3, %0\n"
-            :"=r" (TopZeroNumber)
+            "clz %0, %2\n"
+            "mov %1, #31\n"
+            "sub %0, %1, %0\n"
+            :"=r" (TopZeroNumber),"=r"(temp)
             :"r" (ReadyBitTable)
-            :"r3"
             );
     return TopZeroNumber;
 }
