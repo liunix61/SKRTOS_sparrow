@@ -9,25 +9,33 @@ Lightweight rtos inspired by SKRTOS
 
 **开发环境是clion**
 
-SparrowHAL是hal库的移植，SparrowStdlib是标准库的移植。
+**SparrowHAL**是hal库的移植，**SparrowStdlib**是标准库的移植。
 
 
 
 **开发环境是Keil**
 
-SparrowKeilStd是在keil环境下能稳定运行的标准库工程，适用于keil v5.06版本的编译器。SparrowKeilHal是在keil环境下能稳定运行的HAL库工程,	适用于Keil V6版本的编译器。
+**SparrowKeilStd**是在keil环境下能稳定运行的标准库工程，适用于keil v5.06版本的编译器。**SparrowKeilHal**是在keil环境下能稳定运行的HAL库工程,	适用于Keil V6版本的编译器。
 
 如果编译没问题但是运行错误，请尝试降低keil的编译器优化等级。这是因为hal生成的工程默认编译优化全开，可能导致出现bug。
 
+**以上四个文件夹的Sparrow都是400行源代码的版本**
 
+### 其余三个文件夹
 
-### 文件夹
+**SparrowMeque**是**消息队列**的测试工程
 
-SparrowIPC文件夹是Sparrow分层封装并进行抽象后的工程，将调度层与IPC层隔离开来，调度层实现任务相关的接口，IPC层仅仅利用线程状态转移相关的接口实现线程通信机制。
+**SparrowSem**是**信号量**的测试工程
 
-SparrowIPC版本的代码开发遵循以下原则，其中接口隔离原则是核心：
+**SparrowMutex**是**互斥量**的测试工程
 
-#### 基本原则
+三个文件夹均带有Sparrow的**消息队列、信号量、互斥锁**三个IPC机制，是Sparrow的**拓展版本**，IPC机制的源码都具有良好的可移植性。
+
+带有IPC机制的工程中的Sparrow文件夹是Sparrow分层封装并进行抽象后的工程，将调度层与IPC层隔离开来，调度层实现任务相关的接口，IPC层仅仅利用线程状态转移相关的接口实现线程通信机制。
+
+Sparrow的源码开发遵循以下原则，其中接口隔离原则是核心：
+
+#### Sparrow开发基本原则
 
 1.跨越多个源文件的全局变量必须带所在文件的名称，局部变量小写加下划线命名，全局变量命名中的不同单词第一个字母应大写
 
