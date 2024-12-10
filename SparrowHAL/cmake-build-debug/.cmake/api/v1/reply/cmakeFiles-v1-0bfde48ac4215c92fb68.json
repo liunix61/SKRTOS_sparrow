@@ -1155,8 +1155,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug",
-		"source" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL"
+		"build" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowHAL/cmake-build-debug",
+		"source" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowHAL"
 	},
 	"version" : 
 	{

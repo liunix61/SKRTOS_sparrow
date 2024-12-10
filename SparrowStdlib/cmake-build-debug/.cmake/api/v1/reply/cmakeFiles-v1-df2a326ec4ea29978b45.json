@@ -1137,8 +1137,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/cmake-build-debug",
-		"source" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib"
+		"build" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/cmake-build-debug",
+		"source" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib"
 	},
 	"version" : 
 	{

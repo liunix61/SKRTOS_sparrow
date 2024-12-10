@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake/stm32cubemx
+# Install script for directory: C:/Users/el/CLionProjects/Sparrow/project/SparrowHAL/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

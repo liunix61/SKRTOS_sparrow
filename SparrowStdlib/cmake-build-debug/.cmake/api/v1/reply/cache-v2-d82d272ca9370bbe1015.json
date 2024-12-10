@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug"
+			"value" : "c:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -911,7 +911,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -975,7 +975,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "stm32f1"
+			"value" : "xSkRTOS"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1418,7 +1418,7 @@
 			"value" : "ProcessorCount_cmd_uname-NOTFOUND"
 		},
 		{
-			"name" : "stm32cubemx_BINARY_DIR",
+			"name" : "xSkRTOS_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1427,46 +1427,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug/cmake/stm32cubemx"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/cmake-build-debug"
 		},
 		{
-			"name" : "stm32cubemx_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "stm32cubemx_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake/stm32cubemx"
-		},
-		{
-			"name" : "stm32f1_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL/cmake-build-debug"
-		},
-		{
-			"name" : "stm32f1_IS_TOP_LEVEL",
+			"name" : "xSkRTOS_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1478,7 +1442,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "stm32f1_SOURCE_DIR",
+			"name" : "xSkRTOS_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1487,7 +1451,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowHAL"
+			"value" : "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib"
 		}
 	],
 	"kind" : "cache",

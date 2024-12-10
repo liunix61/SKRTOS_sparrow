@@ -49,43 +49,44 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-#include "core_cm3.h"
 #include<stdint.h>
+#include<stdio.h>
 #include<stdlib.h>
 
 
-#define aligment_byte               0x07
+
+#define alignment_byte               0x07
 #define configSysTickClockHz			( ( unsigned long ) 72000000 )
 #define configTickRateHz			( ( uint32_t ) 1000 )
 #define configShieldInterPriority 	191
 #define config_heap   8*1024
-#define configMaxPriori  32
-
+#define configMaxPriority  32
 
 #define Class(class)    \
 typedef struct  class  class;\
 struct class
 
-#define MIN_size     ((size_t) (heapstructSize << 1))
+#define MIN_size     ((size_t) (HeapStructSize << 1))
 
 Class(heap_node){
     heap_node *next;
-    size_t blocksize;
+    size_t BlockSize;
 };
 
 Class(xheap){
     heap_node head;
     heap_node *tail;
-    size_t allsize;
+    size_t AllSize;
 };
 
-xheap theheap = {
+xheap TheHeap = {
         .tail = NULL,
-        .allsize = config_heap,
+        .AllSize = config_heap,
 };
 
 static  uint8_t AllHeap[config_heap];
-static const size_t heapstructSize = (sizeof(heap_node) + (size_t)(aligment_byte)) &~(aligment_byte);
+static const size_t HeapStructSize = (sizeof(heap_node) + (size_t)(alignment_byte)) &~(alignment_byte);
+
 
 void heap_init( void )
 {
@@ -113,25 +114,25 @@ void heap_init( void )
     first_node->BlockSize = TheHeap.AllSize;
 }
 
-void *heap_malloc(size_t wantsize)
+
+
+void *heap_malloc(size_t WantSize)
 {
-    heap_node *prevnode;
-    heap_node *usenode;
-    heap_node *newnode;
-    size_t aligmentrequisize;
+    heap_node *prev_node;
+    heap_node *use_node;
+    heap_node *new_node;
+    size_t alignment_require_size;
     void *xReturn = NULL;
-    wantsize += heapstructSize;
-    if((wantsize & aligment_byte) != 0x00)
-    {
-        aligmentrequisize = (aligment_byte + 1) - (wantsize & aligment_byte);//must 8-byte alignment
-        wantsize += aligmentrequisize;
-    }//You can add the TaskSuspend function ,that make here be a atomic operation
-    if(theheap.tail== NULL )
-    {
+    WantSize += HeapStructSize;
+    if((WantSize & alignment_byte) != 0x00) {
+        alignment_require_size = (alignment_byte + 1) - (WantSize & alignment_byte);//must 8-byte alignment
+        WantSize += alignment_require_size;
+    }//You can add the TaskSuspend function ,that make here be an atomic operation
+    if(TheHeap.tail== NULL ) {
         heap_init();
     }//Resume
-    prevnode = &theheap.head;
-    usenode = theheap.head.next;
+    prev_node = &TheHeap.head;
+    use_node = TheHeap.head.next;
     while((use_node->BlockSize) < WantSize) {//check the size is fit
         prev_node = use_node;
         use_node = use_node->next;
@@ -139,69 +140,65 @@ void *heap_malloc(size_t wantsize)
             return xReturn;
         }
     }
-    xReturn = (void*)( ( (uint8_t*)usenode ) + heapstructSize );
-    prevnode->next = usenode->next ;
-    if( (usenode->blocksize - wantsize) > MIN_size )
-    {
-        newnode = (void*)( ( (uint8_t*)usenode ) + wantsize );
-        newnode->blocksize = usenode->blocksize - wantsize;
-        usenode->blocksize = wantsize;
-        newnode->next = prevnode->next ;
-        prevnode->next = newnode;
-    }
-    theheap.allsize-= usenode->blocksize;
-    usenode->next = NULL;
+    xReturn = (void*)( ( (uint8_t*)use_node ) + HeapStructSize );
+    prev_node->next = use_node->next ;
+    if( (use_node->BlockSize - WantSize) > MIN_size ) {
+        new_node = (void *) (((uint8_t *) use_node) + WantSize);
+        new_node->BlockSize = use_node->BlockSize - WantSize;
+        use_node->BlockSize = WantSize;
+        new_node->next = prev_node->next;
+        prev_node->next = new_node;
+    }//Finish cutting
+    TheHeap.AllSize-= use_node->BlockSize;
+    use_node->next = NULL;
     return xReturn;
 }
 
 static void InsertFreeBlock(heap_node* xInsertBlock);
-void heap_free(void *xret)
+void heap_free(void *xReturn)
 {
     heap_node *xlink;
-    uint8_t *xFree = (uint8_t*)xret;
+    uint8_t *xFree = (uint8_t*)xReturn;
 
-    xFree -= heapstructSize;
+    xFree -= HeapStructSize;//get the start address of the heap struct
     xlink = (void*)xFree;
-    theheap.allsize += xlink->blocksize;
+    TheHeap.AllSize += xlink->BlockSize;
     InsertFreeBlock((heap_node*)xlink);
 }
 
 static void InsertFreeBlock(heap_node* xInsertBlock)
 {
-    heap_node *first_fitnode;
+    heap_node *first_fit_node;
     uint8_t* getaddr;
 
-    for(first_fitnode = &theheap.head;first_fitnode->next < xInsertBlock;first_fitnode = first_fitnode->next)
+    for(first_fit_node = &TheHeap.head;first_fit_node->next < xInsertBlock;first_fit_node = first_fit_node->next)
     { /*finding the fit node*/ }
 
-    xInsertBlock->next = first_fitnode->next;
-    first_fitnode->next = xInsertBlock;
+    xInsertBlock->next = first_fit_node->next;
+    first_fit_node->next = xInsertBlock;
 
     getaddr = (uint8_t*)xInsertBlock;
-    if((getaddr + xInsertBlock->blocksize) == (uint8_t*)(xInsertBlock->next))
-    {
-        if(xInsertBlock->next != theheap.tail )
-        {
-            xInsertBlock->blocksize += xInsertBlock->next->blocksize;
+    if((getaddr + xInsertBlock->BlockSize) == (uint8_t*)(xInsertBlock->next)) {
+        if (xInsertBlock->next != TheHeap.tail) {
+            xInsertBlock->BlockSize += xInsertBlock->next->BlockSize;
             xInsertBlock->next = xInsertBlock->next->next;
-        }
-        else
-        {
-            xInsertBlock->next = theheap.tail;
+        } else {
+            xInsertBlock->next = TheHeap.tail;
         }
     }
-    getaddr = (uint8_t*)first_fitnode;
-    if((getaddr + first_fitnode->blocksize) == (uint8_t*) xInsertBlock)
-    {
-        first_fitnode->blocksize += xInsertBlock->blocksize;
-        first_fitnode->next = xInsertBlock->next;
+    getaddr = (uint8_t*)first_fit_node;
+    if((getaddr + first_fit_node->BlockSize) == (uint8_t*) xInsertBlock) {
+        first_fit_node->BlockSize += xInsertBlock->BlockSize;
+        first_fit_node->next = xInsertBlock->next;
     }
 }
 
 
+
+
 Class(Stack_register)
 {
-    //automatic stacking
+    //manual stacking
     uint32_t r4;
     uint32_t r5;
     uint32_t r6;
@@ -210,7 +207,7 @@ Class(Stack_register)
     uint32_t r9;
     uint32_t r10;
     uint32_t r11;
-    //manual stacking
+    //automatic stacking
     uint32_t r0;
     uint32_t r1;
     uint32_t r2;
@@ -237,59 +234,55 @@ typedef void (* TaskFunction_t)( void * );
 #define vPortSVCHandler SVC_Handler
 #define xPortPendSVHandler PendSV_Handler
 
-void __attribute__( ( naked ) )  vPortSVCHandler( void )
+__asm void vPortSVCHandler( void )
 {
-    __asm volatile (
-            "	ldr	r3, pxCurrentTCBConst2		\n"
-            "	ldr r1, [r3]					\n"
-            "	ldr r0, [r1]					\n"
-            "	ldmia r0!, {r4-r11}				\n"
-            "	msr psp, r0						\n"
-            "	isb								\n"
-            "	mov r0, #0 						\n"
-            "	msr	basepri, r0					\n"
-            "	orr r14, #0xd					\n"
-            "	bx r14							\n"
-            "									\n"
-            "	.align 4						\n"
-            "pxCurrentTCBConst2: .word pxCurrentTCB				\n"
-            );
+	  PRESERVE8
+
+	  ldr	r3, =pxCurrentTCB	/* Restore the context. */
+	  ldr r1, [r3]			/* Use pxCurrentTCBConst to get the pxCurrentTCB address. */
+	  ldr r0, [r1]			/* The first item in pxCurrentTCB is the task top of stack. */
+	  ldmia r0!, {r4-r11}		/* Pop the registers that are not automatically saved on exception entry and the critical nesting count. */
+	  msr psp, r0				/* Restore the task stack pointer. */
+	  isb
+	  mov r0, #0
+	  msr	basepri, r0
+	  orr r14, #0xd
+	  bx r14
 }
 
-void __attribute__( ( naked ) )  xPortPendSVHandler( void )
+__asm void xPortPendSVHandler( void )
 {
-    __asm volatile
-            (
-            "	mrs r0, psp							\n"
-            "	isb									\n"
-            "										\n"
-            "	ldr	r3, pxCurrentTCBConst			\n"
-            "	ldr	r2, [r3]						\n"
-            "										\n"
-            "	stmdb r0!, {r4-r11}					\n"
-            "	str r0, [r2]						\n"
-            "										\n"
-            "	stmdb sp!, {r3, r14}				\n"
-            "	mov r0, %0							\n"
-            "	msr basepri, r0						\n"
-            "   dsb                                 \n"
-            "   isb                                 \n"
-            "	bl vTaskSwitchContext				\n"
-            "	mov r0, #0							\n"
-            "	msr basepri, r0						\n"
-            "	ldmia sp!, {r3, r14}				\n"
-            "										\n"
-            "	ldr r1, [r3]						\n"
-            "	ldr r0, [r1]						\n"
-            "	ldmia r0!, {r4-r11}					\n"
-            "	msr psp, r0							\n"
-            "	isb									\n"
-            "	bx r14								\n"
-            "	nop									\n"
-            "	.align 4							\n"
-            "pxCurrentTCBConst: .word pxCurrentTCB	\n"
-            ::"i" ( configShieldInterPriority )
-            );
+	  extern pxCurrentTCB;
+	  extern vTaskSwitchContext;
+
+	  PRESERVE8
+
+	  mrs r0, psp
+	  isb
+
+	  ldr	r3, =pxCurrentTCB		/* Get the location of the current TCB. */
+	  ldr	r2, [r3]
+
+	  stmdb r0!, {r4-r11}			/* Save the remaining registers. */
+	  str r0, [r2]				/* Save the new top of stack into the first member of the TCB. */
+
+	  stmdb sp!, {r3, r14}
+	  mov r0, configShieldInterPriority
+	  msr basepri, r0
+	  dsb
+	  isb
+	  bl vTaskSwitchContext
+	  mov r0, #0
+	  msr basepri, r0
+	  ldmia sp!, {r3, r14}
+
+  	ldr r1, [r3]
+	  ldr r0, [r1]				/* The first item in pxCurrentTCB is the task top of stack. */
+	  ldmia r0!, {r4-r11}			/* Pop the registers and the critical nesting count. */
+	  msr psp, r0
+	  isb
+	  bx r14
+	  nop
 }
 
 #define switchTask()\
@@ -299,11 +292,11 @@ uint32_t  NextTicks = ~(uint32_t)0;
 uint32_t  TicksBase = 0;
 
 uint32_t ReadyBitTable = 0;
-TaskHandle_t TcbTaskTable[configMaxPriori];
+TaskHandle_t TcbTaskTable[configMaxPriority];
 
 uint32_t DelayBitTable = 0;
-uint32_t TicksTable[configMaxPriori];
-uint32_t TicksTableAssist[configMaxPriori];
+uint32_t TicksTable[configMaxPriority];
+uint32_t TicksTableAssist[configMaxPriority];
 uint32_t* WakeTicksTable;
 uint32_t* OverWakeTicksTable;
 #define TicksTableInit( ) {  \
@@ -321,7 +314,6 @@ uint32_t SuspendBitTable = 0;
 
 //the table is defined for signal mechanism
 uint32_t BlockedBitTable = 0;
-
 
 /*The RTOS delay will switch the task.It is used to liberate low-priority task*/
 void TaskDelay( uint16_t ticks )
@@ -349,12 +341,9 @@ void CheckTicks( void )
     if( TicksBase == 0){
         TicksTableSwitch( );
     }
-    for(int i=0 ; i < configMaxPriori;i++) 
-    {
-        if(  WakeTicksTable[i]  > 0) 
-        {
-            if ( TicksBase >= WakeTicksTable[i] ) 
-            {
+    for(int i=0 ; i < configMaxPriority;i++) {
+        if(  WakeTicksTable[i]  > 0) {
+            if ( TicksBase >= WakeTicksTable[i] ) {
                 WakeTicksTable[i] = 0;
                 DelayBitTable &= ~(1 << i );//it is retained for the sake of normativity.
                 ReadyBitTable |= (1 << i);
@@ -365,37 +354,32 @@ void CheckTicks( void )
 }
 
 
-__attribute__((always_inline)) inline uint32_t  xEnterCritical( void )
+
+__attribute__((always_inline)) uint32_t xEnterCritical( void )
 {
     uint32_t xReturn;
-    uint32_t temp;
+	uint32_t BarrierPriority = configShieldInterPriority;
 
     __asm volatile(
             " cpsid i               \n"
-            " mrs %0, basepri       \n"
-            " mov %1, %2			\n"
-            " msr basepri, %1       \n"
+            " mrs xReturn, basepri       \n"
+            " msr basepri, BarrierPriority       \n"
             " dsb                   \n"
             " isb                   \n"
             " cpsie i               \n"
-            : "=r" (xReturn), "=r"(temp)
-            : "r" (configShieldInterPriority)
-            : "memory"
             );
 
     return xReturn;
 }
 
-__attribute__((always_inline)) inline void xExitCritical( uint32_t xReturn )
+__attribute__((always_inline)) void xExitCritical( uint32_t xReturn )
 {
     __asm volatile(
             " cpsid i               \n"
-            " msr basepri, %0       \n"
+            " msr basepri, xReturn       \n"
             " dsb                   \n"
             " isb                   \n"
             " cpsie i               \n"
-            :: "r" (xReturn)
-            : "memory"
             );
 }
 
@@ -437,27 +421,24 @@ void xTaskCreate( TaskFunction_t pxTaskCode,
     NewTcb->uxPriority = uxPriority;
     NewTcb->pxStack = ( uint32_t *) heap_malloc( ( ( ( size_t ) usStackDepth ) * sizeof( uint32_t * ) ) );
     topStack =  NewTcb->pxStack + (usStackDepth - (uint32_t)1) ;
-    topStack = ( uint32_t *) (((uint32_t)topStack) & (~((uint32_t) aligment_byte)));
+    topStack = ( uint32_t *) (((uint32_t)topStack) & (~((uint32_t) alignment_byte)));
     NewTcb->pxTopOfStack = pxPortInitialiseStack(topStack,pxTaskCode,pvParameters,self);
 
     pxCurrentTCB = NewTcb;
     ReadyBitTable |= (1 << uxPriority);
 }
 
-__attribute__( ( always_inline ) ) static inline uint8_t FindHighestPriority( void )
-{
+__attribute__((always_inline)) static inline uint8_t FindHighestPriority(void) {
     uint8_t TopZeroNumber;
     uint8_t temp;
-    __asm volatile
-            (
-            "clz %0, %2\n"
-            "mov %1, #31\n"
-            "sub %0, %1, %0\n"
-            :"=r" (TopZeroNumber),"=r"(temp)
-            :"r" (ReadyBitTable)
-            );
+    __asm {
+        clz TopZeroNumber, ReadyBitTable
+        mov temp, #31
+        sub TopZeroNumber, temp, TopZeroNumber
+    }
     return TopZeroNumber;
 }
+
 
 void vTaskSwitchContext( void )
 {
@@ -493,6 +474,26 @@ void SchedulerInit( void )
 }
 
 
+__asm void prvStartFirstTask( void )
+{
+	  PRESERVE8
+	/* Use the NVIC offset register to locate the stack. */
+	  ldr r0, =0xE000ED08
+	  ldr r0, [r0]
+  	ldr r0, [r0]
+	/* Set the msp back to the start of the stack. */
+  	msr msp, r0
+	/* Globally enable interrupts. */
+	  cpsie i
+	  cpsie f
+	  dsb
+	  isb
+	/* Call SVC to start the first task. */
+	  svc 0
+	  nop
+	  nop
+}
+
 __attribute__( ( always_inline ) ) inline void SchedulerStart( void )
 {
     /* Start the timer that generates the tick ISR.  Interrupts are disabled
@@ -508,23 +509,11 @@ __attribute__( ( always_inline ) ) inline void SchedulerStart( void )
     SysTick->CTRL = ( ( 1UL << 2UL ) | ( 1UL << 1UL ) | ( 1UL << 0UL ) );
 
     /* Start the first task. */
-    __asm volatile (
-            " ldr r0, =0xE000ED08 	\n"/* Use the NVIC offset register to locate the stack. */
-            " ldr r0, [r0] 			\n"
-            " ldr r0, [r0] 			\n"
-            " msr msp, r0			\n"/* Set the msp back to the start of the stack. */
-            " cpsie i				\n"/* Globally enable interrupts. */
-            " cpsie f				\n"
-            " dsb					\n"
-            " isb					\n"
-            " svc 0					\n"/* System call to start first task. */
-            " nop					\n"
-            " .ltorg				\n"
-            );
+    prvStartFirstTask();
 }
 
-
 //Task Area!The user must create task handle manually because of debugging and specification
+
 TaskHandle_t tcbTask1 = NULL;
 TaskHandle_t tcbTask2 = NULL;
 

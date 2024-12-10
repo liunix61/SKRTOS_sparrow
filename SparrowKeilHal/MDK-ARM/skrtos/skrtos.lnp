@@ -20,6 +20,6 @@
 "skrtos\stm32f1xx_hal_exti.o"
 "skrtos\system_stm32f1xx.o"
 --strict --scatter "skrtos\skrtos.sct"
---summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "skrtos.map" -o skrtos\skrtos.axf

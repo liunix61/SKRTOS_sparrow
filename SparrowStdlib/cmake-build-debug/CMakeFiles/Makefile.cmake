@@ -94,12 +94,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Generic.cmake"
   "C:/Program Files/JetBrains/CLion 2024.1.5/bin/cmake/win/x64/share/cmake-3.28/Modules/ProcessorCount.cmake"
-  "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/CMakeLists.txt"
+  "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/CMakeLists.txt"
   "CMakeFiles/3.28.6/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.6/CMakeSystem.cmake"
-  "C:/Users/el/CLionProjects/Sparrow/mytryos/SparrowStdlib/cmake/gcc-arm-none-eabi.cmake"
+  "C:/Users/el/CLionProjects/Sparrow/project/SparrowStdlib/cmake/gcc-arm-none-eabi.cmake"
   )
 
 # The corresponding makefile is:

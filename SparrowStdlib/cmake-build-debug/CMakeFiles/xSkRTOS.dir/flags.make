@@ -5,13 +5,13 @@
 # compile C with D:/all/devemcu/gcc_arm/gccarm/bin/arm-none-eabi-gcc.exe
 ASM_DEFINES = 
 
-ASM_INCLUDES = -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\SkRTOS\include -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\Library\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\Start\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\System\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\User\Inc
+ASM_INCLUDES = -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\SkRTOS\include -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\Library\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\Start\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\System\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\User\Inc
 
 ASM_FLAGS =  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g
 
 C_DEFINES = 
 
-C_INCLUDES = -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\SkRTOS\include -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\Library\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\Start\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\System\inc -IC:\Users\el\CLionProjects\Sparrow\mytryos\SparrowStdlib\User\Inc
+C_INCLUDES = -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\SkRTOS\include -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\Library\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\Start\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\System\inc -IC:\Users\el\CLionProjects\Sparrow\project\SparrowStdlib\User\Inc
 
 C_FLAGS =  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -fdiagnostics-color=always
 

@@ -1,5 +1,5 @@
 CMakeFiles/stm32f1.dir/Core/Src/sysmem.c.obj: \
- C:\Users\el\CLionProjects\Sparrow\mytryos\SparrowHAL\Core\Src\sysmem.c \
+ C:\Users\el\CLionProjects\Sparrow\project\SparrowHAL\Core\Src\sysmem.c \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\errno.h \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\sys\errno.h \
  d:\all\devemcu\gcc_arm\gccarm\arm-none-eabi\include\sys\reent.h \
